@@ -15,22 +15,22 @@ const getWeather = async (city) =>{
   try {
     const response = await fetch(url, options);
     const result = await response.json();
-    console.log(result);
-    cloud_pct.innerHTML = response.cloud_pc;
-    cloud_pct1.innerHTML = response.cloud_pc;
-    temp.innerHTML = response.temp;
-    feels_like.innerHTML = response.feels_like;
-    feels_like1.innerHTML = response.feels_like;
-    humidity.innerHTML = response.humidity;
-    humidity1.innerHTML = response.humidity; 
-    min_temp.innerHTML = response.min_temp;
-    max_temp.innerHTML = response.max_temp;
-    wind_speed.innerHTML = response.wind_speed;
-    wind_speed1.innerHTML = response.wind_speed;
-    wind_degrees.innerHTML = response.wind_degrees;
-    wind_degrees1.innerHTML = response.wind_degrees;
-    sunrise.innerHTML = response.sunrise;
-    sunset.innerHTML = response.sunset;
+    // console.log(result);
+    cloud_pct.innerHTML = result.cloud_pct;
+    cloud_pct1.innerHTML = result.cloud_pct;
+    temp.innerHTML = result.temp;
+    feels_like.innerHTML = result.feels_like;
+    feels_like1.innerHTML = result.feels_like;
+    humidity.innerHTML = result.humidity;
+    humidity1.innerHTML = result.humidity; 
+    min_temp.innerHTML = result.min_temp;
+    max_temp.innerHTML = result.max_temp;
+    wind_speed.innerHTML = result.wind_speed;
+    wind_speed1.innerHTML = result.wind_speed;
+    wind_degrees.innerHTML = result.wind_degrees;
+    wind_degrees1.innerHTML = result.wind_degrees;
+    sunrise.innerHTML = result.sunrise;
+    sunset.innerHTML = result.sunset;
   } 
   catch (error) {
     console.error(error);
