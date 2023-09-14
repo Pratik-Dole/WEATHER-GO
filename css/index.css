@@ -31,3 +31,11 @@ body{
 .edet:hover{
     color: greenyellow;
 }
+
+.ulFont{
+    font-size: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* ................................................................................ */

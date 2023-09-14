@@ -13,7 +13,7 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent my-2">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent my-0">
             <a class="navbar-brand" href="/index.html"><img class="bi me-2" width="60" height="55" src="/Images/favIcon.png" alt=""> <b class="logoText">WeatherGo</b></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -21,8 +21,8 @@
       
             <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbarSupportedContent">
               <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" style="width: 360px;" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2" style="width: 360px;" type="search" placeholder="Search Your City" aria-label="Search" id="city">
+                <button class="btn btn-success my-2 my-sm-0" type="submit" id="submiting">Search</button>
               </form>
             </div>
           </nav>
@@ -30,26 +30,26 @@
 
     <section>
       <div class="container">      
-      <div class="container py-1">
+      <div class="container py-0-">
           <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-            <h1 class="display-4 fw-normal text-body-emphasis extra0">WeatherGo - Weather For <SPan id="">amravati</SPan></h1>
-            <p class="fs-5 text-body-secondary extra0">WeatherGo Is Your Online Weather Condition Partner, Which Provides The RealTime Data To You About Current Weather Conditon In Your Area/Sector. For More Details <a class="mdet" href="/guide.html">Click Here</a></p>
+            <h1 class="display-4 fw-normal text-body-emphasis extra0">WeatherGo - Weather For <SPan id="cityName"></SPan></h1>
+            <p class="fs-5 text-body-secondary extra0">WeatherGo Is Your Online Weather Condition Partner, Which Provides You The RealTime Data To You About Current Weather Conditon In Your Area/Sector. For More Details <a class="mdet" href="/guide.html">Click Here</a></p>
           </div>
       
         <main>
-          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="row row-cols-1 row-cols-md-3 mb-0 text-center">
             <div class="col">
               <div class="bg-dark text-white card mb-4 rounded-3 shadow-sm border-white">
                 <div class="card-header py-3 text-bg-primary border-white">
                   <h4 class="my-0 fw-normal">Temperature</h4>
                 </div>
                 <div class="card-body">
-                  <h1 class="card-title pricing-card-title"><small class="text-body-secondary fw-light"></small></h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>10 users included <span id=""></span></li>
-                    <li>2 GB of storage <span id=""></span></li>
-                    <li>Email support <span id=""></span></li>
-                    <li>Help center access <span id=""></span></li>
+                  <h1 class="card-title pricing-card-title"><span id="temp"></span><small class="text-body-secondary fw-light"> &deg;C</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4 ulFont">
+                    <li>Min Temp : <span id="min_temp"></span></li>
+                    <li>Max Temp : <span id="max_temp"></span></li>
+                    <li>Sunrise : <span id="sunrise"></span></li>
+                    <li>Sunset : <span id="sunset"></span></li>
                   </ul>
                   <button type="button" class="w-80 btn btn-lg btn-success">Know More</button>
                 </div>
@@ -61,12 +61,12 @@
                   <h4 class="my-0 fw-normal">Humidity</h4>
                 </div>
                 <div class="card-body">
-                  <h1 class="card-title pricing-card-title"><small class="text-body-secondary fw-light"></small></h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>10 users included <span id=""></span></li>
-                    <li>2 GB of storage <span id=""></span></li>
-                    <li>Email support <span id=""></span></li>
-                    <li>Help center access <span id=""></span></li>
+                  <h1 class="card-title pricing-card-title"><span id="humidity1"></span><small class="text-body-secondary fw-light"> %</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4 ulFont">
+                    <li>Humidity : <span id="humidity"></span></li>
+                    <li>Wind Degrees : <span id="wind_degrees1"></span></li>
+                    <li>Feels Like : <span id="feels_like"></span></li>
+                    <li>Cloud PCT : <span id="cloud_pct"></span></li>
                   </ul>
                   <button type="button" class="w-80 btn btn-lg btn-success">Know More</button>
                 </div>
@@ -78,12 +78,12 @@
                   <h4 class="my-0 fw-normal">Wind Speed</h4>
                 </div>
                 <div class="card-body">
-                  <h1 class="card-title pricing-card-title"><small class="text-body-secondary fw-light"></small></h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>10 users included <span id=""></span></li>
-                    <li>2 GB of storage <span id=""></span></li>
-                    <li>Email support <span id=""></span></li>
-                    <li>Help center access <span id=""></span></li>
+                  <h1 class="card-title pricing-card-title"><span id="wind_speed1"></span><small class="text-body-secondary fw-light"> m/s</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4 ulFont">
+                    <li>Wind Speed : <span id="wind_speed"></span></li>
+                    <li>Wind Degrees : <span id="wind_degrees"></span></li>
+                    <li>Feels Like : <span id="feels_like1"></span></li>
+                    <li>Cloud PCT : <span id="cloud_pct1"></span></li>
                   </ul>
                   <button type="button" class="w-80 btn btn-lg btn-success">Know More</button>
                 </div>
@@ -101,7 +101,7 @@
         <p class="col-md-4 mb-0 text-body-secondary extra0">© 2023 Company, Inc</p>
     
         <a href="/index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-          <img class="bi me-2" width="40" height="32" src="/Images/favIcon.png" alt="">
+          <img class="bi me-2" width="50" height="45" src="/Images/favIcon.png" alt="">
         </a>
     
         <ul class="nav col-md-4 justify-content-end">
